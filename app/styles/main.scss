@@ -11,7 +11,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
@@ -26,6 +26,7 @@ body {
 /* Custom page header */
 .header {
     border-bottom: 1px solid #e5e5e5;
+    background: gray;
 
     /* Make the masthead heading the same height as the navigation */
     h3 {
@@ -37,11 +38,20 @@ body {
 }
 
 .left-column {
-    
+
 }
 
 .right-column {
 
+}
+
+.panel-default > .panel-heading {
+    background: rgb(46, 56, 61);
+    color: white;
+}
+
+.btn-danger {
+    background: #96110D;
 }
 
 /* Custom page footer */
@@ -49,6 +59,11 @@ body {
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
+}
+
+.container .jumbotron {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .container-narrow > hr {
