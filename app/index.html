@@ -25,48 +25,67 @@
         <![endif]-->
 
 
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+        <div class="header">
+            <div class="container">
                 <h3 class="text-muted">superherofun</h3>
             </div>
-
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-            </div>
-
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Sass with Compass</h4>
-                    <p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>
+        </div>
 
 
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+            <div class="container">
+                <div class="col-md-5 left-column">
+                    <div class="jumbotron">
+                        <h1>'Allo, 'Allo!</h1>
+                        <p class="lead">Always a pleasure scaffolding your apps.</p>
+                        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+                    </div>
+                    <form role="form">
+                        <div class="form-group">
+                            <label class="sr-only" for nameInput>Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Gimme' your name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for nameInput>Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Gimme' your name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for nameInput>Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Gimme' your name">
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-block">Let's Go!</button>
+                    </form>
+                </div>
 
-
+            <div class="col-md-7 right-column">
+                <div class="row marketing">
+                    <div class="col-lg-6 fighter-profile">
+                        <h4>HTML5 Boilerplate</h4>
+                        <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+                    </div>
+                    <div class="col-lg-6 fighter-profile">
+                        <h4>HTML5 Boilerplate</h4>
+                        <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+                    </div>
+                    <div class="col-lg-6 fighter-profile">
+                        <h4>HTML5 Boilerplate</h4>
+                        <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
+            <div class="col-md-12">
+                <div class="footer">
+                    <p>♥ from the Awake Kat, ColorTurtle, &amp; Oz team</p>
+                </div>
             </div>
-
+        </div>
         </div>
 
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+
         <!-- endbower -->
         <!-- endbuild -->
 
