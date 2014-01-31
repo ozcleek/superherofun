@@ -43,10 +43,15 @@
 <!-- hexagon -->
 <div id="svg_div">
 <svg version="1.1" width="200">
+<defs>
+<pattern id="img1" patternUnits="userSpaceOnUse" width="180" height="180">
+    <image xlink:href="images/img.png" x="0" y="0"
+                width="180" height="180" />
+        </pattern>
+    </defs>
 
 
-
-    <path d="M100 40 L151.96152422706632 70 L151.96152422706632 130 L100 160 L48.03847577293368 130 L48.03847577293368 70z" stroke="black" stroke-width="2" fill="red"></path>
+    <path d="M100 40 L151.96152422706632 70 L151.96152422706632 130 L100 160 L48.03847577293368 130 L48.03847577293368 70z" stroke="black" stroke-width="2" fill="url(#img1)"></path>
 </svg>
 </div>
 
