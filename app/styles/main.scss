@@ -42,12 +42,16 @@ h1,h2,h3,h4 {
 .header {
     border-bottom: 1px solid #e5e5e5;
     background: gray;
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+         margin-top: 0;
+         margin-bottom: 0;
+         line-height: 40px;
+         padding-bottom: 19px;
+     }
 }
-header .creepy2 {
-font-family: Trade Winds;
-color: #FF3333;
-font-size: 22px;
-text-shadow: 1px 1px 1px #333;
+
 
 
 // Body CSS Overrides for Twitter Bootstrap
@@ -124,7 +128,9 @@ text-shadow: 1px 1px 1px #333;
     color: #777;
     border-top: 1px solid #e5e5e5;
 }
-
+.container-narrow > hr {
+     margin: 30px 0;
+ }
 
 
 
