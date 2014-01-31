@@ -41,19 +41,19 @@
 <div class="hex-bottom"></div>
 
 <!-- hexagon -->
-<div id="svg_div">
+<!-- <div id="svg_div"> -->
 <svg version="1.1" width="200">
-<defs>
-<pattern id="img1" patternUnits="userSpaceOnUse" width="180" height="180">
-    <image xlink:href="images/img.png" x="0" y="0"
+    <defs>
+        <pattern id="img1" patternUnits="userSpaceOnUse" width="180" height="180">
+            <image xlink:href="images/img.png" x="0" y="0"
                 width="180" height="180" />
         </pattern>
     </defs>
 
 
-    <path d="M100 40 L151.96152422706632 70 L151.96152422706632 130 L100 160 L48.03847577293368 130 L48.03847577293368 70z" stroke="black" stroke-width="2" fill="url(#img1)"></path>
+     <path d="M100 40 L151.96152422706632 70 L151.96152422706632 130 L100 160 L48.03847577293368 130 L48.03847577293368 70z" stroke="black" stroke-width="2" fill="url(#img1)"></path> 
 </svg>
-</div>
+<!-- </div> -->
 
 
         <!-- build:js scripts/vendor.js -->
@@ -64,7 +64,7 @@
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+        // <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
@@ -72,18 +72,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-
-    <!-- hexagon shpae test -->
-<script>
-    $('#svg_div').svg();
-    var svg = $('#svg_div').svg('get');
-    svg.path(hexagon(100,100,60),{stroke: "black", "stroke-width":5, fill: "red",});
-    svg.path(hexagon(212,100,60),{stroke: "black", "stroke-width":5, fill: "blue",});
-    svg.path(hexagon(156,197,60),{stroke: "black", "stroke-width":5, fill: "yellow",});
-</script>
-
-<!-- end hex -->
-
 
 
         <!-- build:js scripts/plugins.js -->
