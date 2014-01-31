@@ -9,6 +9,9 @@
         <title>superherofun</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -25,48 +28,160 @@
         <![endif]-->
 
 
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+        <div class="header">
+            <div class="container">
                 <h3 class="text-muted">superherofun</h3>
             </div>
-
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+        </div>
+        <div class="container">
+            <div class="col-md-5 left-column panel">
+                <div class="jumbotron">
+                    <img class="img-responsive" alt="The Iron Cage Logo" src="IronCageLogo.png">
+                    <p class="lead">When the going<br>gets tough...<br><br>the tough become<br><em>cage fighters.</em></p>
+                </div>
+                <form role="form">
+                    <div class="form-group">
+                        <label class="sr-only" for nameInput>Name</label>
+                        <input type="text" class="form-control input-lg" id="firstNameInput" placeholder="Gimme' yo first name">
+                        <label class="sr-only" for nameInput>Name</label>
+                        <input type="text" class="form-control input-lg" id="secondNameInput" placeholder="Gimme' yo last name">
+                        <input type="text" class="form-control input-lg" placeholder="Gimme' yo fightin' words" maxlength="140">
+                    </div>
+                    <h2>Would you rather?</h2>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Fly when you fart?
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Be invisible when you pee?
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        Have x-ray vision when you belch?
+                      </label>
+                    </div>
+                    <h2>Would you rather?</h2>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                      </label>
+                    </div>
+                    <h2>Would you rather?</h2>
+                     <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                      </label>
+                    </div>
+                   <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-block btn-lg">Let's Go!</button>
+                </form>
             </div>
-
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Sass with Compass</h4>
-                    <p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>
-
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-
+            <div class="col-md-7 right-column">
+                <div class="row">
+                    <div class="row fighter-profile panel panel-default">
+                        <div class="panel-heading">Austin "Xtreme" Creek 
+                        </div>                      
+                        <div class="col-md-4 avatar">
+                            <img src="mason.jpg" alt="..." class="img-circle">
+                        </div>
+                        <div class="fighter-info col-md-8">
+                            <div class="panel-body">
+                            <blockquote>
+                                <p>I ran. I ran until my muscles burned and my veins pumped battery acid. Then I ran some more. In that case, sir, may I advise against the lad</p>
+                            </blockquote>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Morbi leo risus</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row fighter-profile panel panel-default">
+                        <div class="panel-heading">Daniel "The Terminator" Donaldson 
+                        </div>                      
+                        <div class="col-md-4">
+                            <img src="Mask3c.jpg" alt="..." class="img-circle">
+                        </div>
+                        <div class="fighter-info col-md-8">
+                            <div class="panel-body">
+                            <blockquote>
+                                <p>I only have 140 characters to type here so I better think through and be economic in my choice of words for the fightin' words I want to use</p>
+                            </blockquote>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Morbi leo risus</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row fighter-profile panel panel-default">
+                        <div class="panel-heading">Austin "Xtreme" Creek 
+                        </div>                      
+                        <div class="col-md-4">
+                            <img src="Mask1c.jpg" alt="..." class="img-circle">
+                        </div>
+                        <div class="fighter-info col-md-8">
+                            <div class="panel-body">
+                            <blockquote>
+                                <p>Fightin' quote here</p>
+                            </blockquote>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Morbi leo risus</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
+            <div class="col-md-12">
+                <div class="footer">
+                    <p>♥ from the Awake Kat, ColorTurtle, &amp; Oz team</p>
+                </div>
             </div>
-
+        </div>
         </div>
 
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+
         <!-- endbower -->
         <!-- endbuild -->
 

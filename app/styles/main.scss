@@ -9,10 +9,14 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     padding: 0.2em 0;
 }
 
-/* Space out content a bit */
 body {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
+    font-family: 'Droid Serif', serif;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Roboto Slab', serif;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -26,6 +30,7 @@ body {
 /* Custom page header */
 .header {
     border-bottom: 1px solid #e5e5e5;
+    background: gray;
 
     /* Make the masthead heading the same height as the navigation */
     h3 {
@@ -35,6 +40,74 @@ body {
         padding-bottom: 19px;
     }
 }
+
+// Body CSS Overrides for Twitter Bootstrap
+.left-column {
+    .btn-danger {
+    background: #96110D;
+    }
+    .form-control {
+    margin-bottom: 10px;
+    }
+    .container .jumbotron {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    }
+    .jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+        p {
+            margin-top: 20px;
+        }
+        .btn {
+            font-size: 21px;
+            padding: 14px 24px;
+        }
+    }
+
+}
+
+.right-column {
+    .row    {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .panel-default {
+        border-color: rgb(46, 56, 61);
+    }
+
+    .panel-default > .panel-heading {
+        background: rgb(46, 56, 61);
+        color: white;
+    }
+
+    .fighter-profile {
+    margin-left: 0px;
+
+        img {
+            width: 150px;
+            margin-top: 15px;
+        }
+    }
+
+    .fighter-info {
+        padding-left: 0px;
+    }
+
+    .avatar {
+        padding-right: 0px;
+    }
+
+    .list-group-item {
+        border: none;
+    }
+
+
+}
+
+
 
 /* Custom page footer */
 .footer {
@@ -47,28 +120,11 @@ body {
     margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-    }
-}
-
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-    p + h4 {
-        margin-top: 28px;
-    }
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
+        max-width: 960px;
     }
 
     /* Remove the padding we set earlier */
@@ -88,4 +144,6 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
+
+
 }
