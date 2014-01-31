@@ -2,12 +2,23 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+header {
+background-color: #AAA;
+height: 50px;
+line-height: 50px;
+    .title {
+        font-family: Roboto Slab;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .creepy {
+        font-family: Trade Winds;
+        color: #FF3333;
+        font-size: 22px;
+        text-shadow: 1px 1px 1px #333;
+    }
 }
+
 
 body {
     padding-top: 0px;
@@ -34,12 +45,14 @@ h1,h2,h3,h4 {
 
     /* Make the masthead heading the same height as the navigation */
     h3 {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 40px;
-        padding-bottom: 19px;
-    }
+         margin-top: 0;
+         margin-bottom: 0;
+         line-height: 40px;
+         padding-bottom: 19px;
+     }
 }
+
+
 
 // Body CSS Overrides for Twitter Bootstrap
 .left-column {
@@ -115,11 +128,96 @@ h1,h2,h3,h4 {
     color: #777;
     border-top: 1px solid #e5e5e5;
 }
-
 .container-narrow > hr {
-    margin: 30px 0;
-}
+     margin: 30px 0;
+ }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .browsehappy {
+//     margin: 0.2em 0;
+//     background: #ccc;
+//     color: #000;
+//     padding: 0.2em 0;
+// }
+
+// /* Space out content a bit */
+// body {
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+// }
+
+// /* Everything but the jumbotron gets side spacing for mobile first views */
+// .header,
+// .marketing,
+// .footer {
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }
+
+// /* Custom page header */
+// .header {
+//     border-bottom: 1px solid #e5e5e5;
+
+//     /* Make the masthead heading the same height as the navigation */
+//     h3 {
+//         margin-top: 0;
+//         margin-bottom: 0;
+//         line-height: 40px;
+//         padding-bottom: 19px;
+//     }
+// }
+
+// /* Custom page footer */
+// .footer {
+//     padding-top: 19px;
+//     color: #777;
+//     border-top: 1px solid #e5e5e5;
+// }
+
+// .container-narrow > hr {
+//     margin: 30px 0;
+// }
+
+// /* Main marketing message and sign up button */
+// .jumbotron {
+//     text-align: center;
+//     border-bottom: 1px solid #e5e5e5;
+//     .btn {
+//         font-size: 21px;
+//         padding: 14px 24px;
+//     }
+// }
+
+// /* Supporting marketing content */
+// .marketing {
+//     margin: 40px 0;
+//     p + h4 {
+//         margin-top: 28px;
+//     }
+// }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
