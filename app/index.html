@@ -17,6 +17,9 @@
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        
+        <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
         <!-- endbuild -->
     </head>
     <body>
@@ -24,49 +27,34 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+<header>
+    <span class="title">
+    The Iron <span class="creepy">Cage</span>
+    </span>
+</header>
 
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">superherofun</h3>
-            </div>
+<div class="hex-top"></div>
+<div class="hex-center">
+    The <br>Iron <br>Cage
 
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-            </div>
+</div>
+<div class="hex-bottom"></div>
 
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Sass with Compass</h4>
-                    <p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>
+<!-- hexagon -->
+<div id="svg_div">
+<svg version="1.1" width="200">
 
 
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
 
-
-                </div>
-            </div>
-
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
-            </div>
-
-        </div>
+    <path d="M100 40 L151.96152422706632 70 L151.96152422706632 130 L100 160 L48.03847577293368 130 L48.03847577293368 70z" stroke="black" stroke-width="2" fill="red"></path>
+</svg>
+</div>
 
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -79,6 +67,19 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+
+    <!-- hexagon shpae test -->
+<script>
+    $('#svg_div').svg();
+    var svg = $('#svg_div').svg('get');
+    svg.path(hexagon(100,100,60),{stroke: "black", "stroke-width":5, fill: "red",});
+    svg.path(hexagon(212,100,60),{stroke: "black", "stroke-width":5, fill: "blue",});
+    svg.path(hexagon(156,197,60),{stroke: "black", "stroke-width":5, fill: "yellow",});
+</script>
+
+<!-- end hex -->
+
+
 
         <!-- build:js scripts/plugins.js -->
         <script src="bower_components/sass-bootstrap/js/affix.js"></script>
