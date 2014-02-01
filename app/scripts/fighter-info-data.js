@@ -15,7 +15,7 @@ var fighterData = [
 		wouldYouRather1: 'fly when I fart',
 		wouldYouRather2: 'hiking in stilettos',
 		wouldYouRather3: 'Love to eat chocolate covered grasshoppers',
-	};
+	},
 
 	{
 		fistName: 'Katherine',
