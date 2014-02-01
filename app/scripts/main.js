@@ -11,9 +11,9 @@ if (fightinWords) {this.wrestlerwords = fightinWords}
 
 // prototype for new Fighters
 Wrestler.prototype = {
-	firstname: '' || 'Wrestler',
-	lastname: '' || 'Dude',
-	fightinWords: '' || "I hate making quotes."
+	wrestlerfname: '' || 'Wrestler',
+	wrestlerlname: '' || 'Dude',
+	wrestlerwords: '' || "I hate making quotes."
 };
 
 // calling info for generating the new Fighter on submit
