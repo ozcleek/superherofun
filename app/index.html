@@ -45,7 +45,7 @@
                         <input type="text" class="form-control input-lg" id="firstNameInput" placeholder="Gimme' yo first name">
                         <label class="sr-only" for nameInput>Name</label>
                         <input type="text" class="form-control input-lg" id="secondNameInput" placeholder="Gimme' yo last name">
-                        <input type="text" class="form-control input-lg" placeholder="Gimme' yo fightin' words" maxlength="140">
+                        <input type="text" class="form-control input-lg" placeholder="Gimme' yo fightin' words" maxlength="140" id="fightinWords">
                     </div>
                     <h2>Would you rather?</h2>
                     <div class="radio">
@@ -104,7 +104,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit
                       </label>
                     </div>
-                    <button type="submit" class="btn btn-danger btn-block btn-lg">Let's Go!</button>
+                    <button type="submit" class="btn btn-danger btn-block btn-lg submit">Let's Go!</button>
                 </form>
 
                 <div class="fight-now crazy-town">
@@ -216,6 +216,8 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+                <script src="scripts/fighter-info-data.js"></script>
+
         <!-- endbuild -->
 </body>
 </html>
