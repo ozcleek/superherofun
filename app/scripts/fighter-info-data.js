@@ -35,18 +35,18 @@ var fighterAvatars2 = [
 	"'images/Mask5c.jpg'"]
 
 var fighterNickNames2 = [
-	"The Syntax Snake",
-	"The Tech Terminator",
-	"El Diablo Div",
-	"The Crypt Scrypter",
-	"The Hell-vetica Raiser",
-	"The jQuery Inquisitioner",
-	"The JavaScript Crusher",
-	"The Parsing Pulverizer",
-	"The Underscorcher",
-	"The AsSASSin",
-	"The Terror Error",
-	"The Git Grabber",
-	"The Cunning Container",
-	"The Looping Lunatic"
+	"'The Syntax Snake'",
+	"'The Tech Terminator'",
+	"'El Diablo Div'",
+	"'The Crypt Scrypter'",
+	"'The Hell-vetica Raiser'",
+	"'The jQuery Inquisitioner'",
+	"'The JavaScript Crusher'",
+	"'The Parsing Pulverizer'",
+	"'The Underscorcher'",
+	"'The AsSASSin'",
+	"'The Terror Error'",
+	"'The Git Grabber'",
+	"'The Cunning Container'",
+	"'The Looping Lunatic'"
 ]
