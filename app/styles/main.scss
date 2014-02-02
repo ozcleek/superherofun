@@ -26,6 +26,9 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     @include roundImg("Mask1c.jpg");
  }
 
+ .avatar4 {
+    @include roundImg("Mask4c.jpg");
+ }
 
 
 

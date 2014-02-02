@@ -27,14 +27,14 @@ var fighterData = [
 	}
 ]
 
-var fighterAvatars = [
-	"url(images/Mask1c.jpg)",
-	"url(images/Mask2c.jpg)",
-	"url(images/Mask3c.jpg)",
-	"url(images/Mask4c.jpg)",
-	"url(images/Mask5c.jpg)"]
+var fighterAvatars2 = [
+	"'images/Mask1c.jpg'",
+	"'images/Mask2c.jpg'",
+	"'images/Mask3c.jpg'",
+	"'images/Mask4c.jpg'",
+	"'images/Mask5c.jpg'"]
 
-var fighterNickNames = [
+var fighterNickNames2 = [
 	"The Syntax Snake",
 	"The Tech Terminator",
 	"El Diablo Div",

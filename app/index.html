@@ -42,66 +42,66 @@
                 <form role="form" id="fighterForm">
                     <div class="form-group">
                         <label class="sr-only" for nameInput>Name</label>
-                        <input type="text" class="form-control input-lg" id="firstNameInput" placeholder="Gimme' yo first name">
+                        <input type="text" class="form-control input-lg" id="firstNameInput" placeholder="Gimme' yo first name" name="firstName"value="">
                         <label class="sr-only" for nameInput>Name</label>
-                        <input type="text" class="form-control input-lg" id="lastNameInput" placeholder="Gimme' yo last name">
-                        <input type="text" class="form-control input-lg" placeholder="Gimme' yo fightin' words" maxlength="140" id="fightinWords">
+                        <input type="text" class="form-control input-lg" id="lastNameInput" placeholder="Gimme' yo last name"name="lastName" value="">
+                        <input type="text" class="form-control input-lg" placeholder="Gimme' yo fightin' words" maxlength="140" id="fightinWords" name="fightinWords" value="">
                     </div>
-                    <h2>Would you rather?</h2>
+                    <h2>Would you rather have the superpower of... ?</h2>
                     <div class="radio">
                       <label>
                         <input type="radio" name="optionsRadios1" id="set1option1" value="option1" checked>
-                        Fly when you fart?
+                        Can fly during farting.
                       </label>
                     </div>
                     <div class="radio">
                       <label>
                         <input type="radio" name="optionsRadios1" id="set1option2" value="option1" checked>
-                        Be invisible when you pee?
+                        Can turn invisible when urinating.
                       </label>
                     </div>
                     <div class="radio">
                       <label>
                         <input type="radio" name="optionsRadios1" id="set1option3" value="option2">
-                        Have x-ray vision when you belch?
+                        Can see in x-ray when belching.
                       </label>
                     </div>
                     <h2>Would you rather?</h2>
                     <div class="radio">
                       <label>
                         <input type="radio" name="optionsRadios2" id="set2option1" value="option1" checked>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        Love to live in the past but with no memory of the present.
                       </label>
                     </div>
                     <div class="radio">
                       <label>
                         <input type="radio" name="optionsRadios2" id="set2option2" value="option1" checked>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        Love to live in the future but with no memory of the past.
                       </label>
                     </div>
                     <div class="radio">
                       <label>
                         <input type="radio" name="optionsRadios2" id="set2option3" value="option2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        Love to live in the present but with split personalities.
                       </label>
                     </div>
-                    <h2>Would you rather?</h2>
+                    <h2>Would you rather be... ?</h2>
                      <div class="radio">
                       <label>
                         <input type="radio" name="optionsRadios3" id="set3option1" value="option1" checked>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        Able to read every language but can't write them. 
                       </label>
                     </div>
                    <div class="radio">
                       <label>
                         <input type="radio" name="optionsRadios3" id="set3option2" value="option1" checked>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        Able to write in every log but can't understand them.
                       </label>
                     </div>
                     <div class="radio">
                       <label>
                         <input type="radio" name="optionsRadios3" id="set3option3" value="option2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        Able to understand every language but can only read &amp; write in Swahili.
                       </label>
                     </div>
                     <button type="submit" class="btn btn-danger btn-block btn-lg submit">Let's Go!</button>
@@ -112,12 +112,12 @@
                 </div>
             </div>
             <div class="col-md-7 right-column">
-                <div class="row">
+                <div id = "profile-column"class="row">
                     <div class="row fighter-profile panel panel-default">
                         <div class="panel-heading">Austin "Xtreme" Creek 
                         </div>                      
                         <div class="col-md-4 avatar">
-                            <img src="images/Mask2c.jpg" height="985" width="982"alt="" class="avatar1">
+                            <img src="images/Mask2c.jpg" class="avatar1">
                         </div>
                         <div class="fighter-info col-md-8">
                             <div class="panel-body">
@@ -216,8 +216,30 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
-                <script src="scripts/fighter-info-data.js"></script>
+        <script src="scripts/fighter-info-data.js"></script>
 
+        <!-- Template Structure -->
+        <script type="text/template" id="profiletmpl">
+          <div class="row fighter-profile panel panel-default">
+            <div class="panel-heading"><%=firstname%> <%=nickname%> <%=lastname%>
+            </div>
+            <div class = "col-md-4 avatar">
+              <img src=<%=avatar%> class="avatar4">
+            </div>
+            <div class="fighter-info col-md-8">
+                <div class="panel-body">
+                    <blockquote>
+                        <p><%=fightinWords%></p>
+                    </blockquote>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">WYR answer one</li>
+                    <li class="list-group-item">WYR answer one</li>
+                    <li class="list-group-item">WYR answer three</li>
+                </ul>
+            </div>
+          </div>
+        </script>
         <!-- endbuild -->
 </body>
 </html>
