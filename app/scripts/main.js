@@ -21,14 +21,75 @@ var fighterAvatars =	"images/Mask5c.jpg";
 // 	wrestlerwords: '' || "I hate making quotes."
 // };
 
+// Would You Rather Question One
+ $("#set1option1").click(function () {
+ 
+	$('input:radio[name=optionsRadios1]:nth(0)').attr('checked',true);
+	//$('input:radio[name=optionsRadios1]')[0].checked = true;
+    });
+
+ $("#set1option2").click(function () {
+ 
+	$('input:radio[name=optionsRadios1]:nth(1)').attr('checked',true);
+	//$('input:radio[name=optionsRadios1]')[1].checked = true;
+    });
+
+ $("#set1option3").click(function () {
+ 
+	$('input:radio[name=optionsRadios1]:nth(2)').attr('checked',true);
+	//$('input:radio[name=optionsRadios1]')[2].checked = true;
+    });
+
+// Would You Rather Question Two
+ $("#set2option1").click(function () {
+ 
+	$('input:radio[name=optionsRadios2]:nth(0)').attr('checked',true);
+	//$('input:radio[name=optionsRadios1]')[0].checked = true;
+    });
+
+ $("#set2option2").click(function () {
+ 
+	$('input:radio[name=optionsRadios2]:nth(1)').attr('checked',true);
+	//$('input:radio[name=optionsRadios1]')[1].checked = true;
+    });
+
+ $("#set2option3").click(function () {
+ 
+	$('input:radio[name=optionsRadios2]:nth(2)').attr('checked',true);
+	//$('input:radio[name=optionsRadios1]')[2].checked = true;
+    });
+
+// Would You Rather Question Three
+ $("#set3option1").click(function () {
+ 
+	$('input:radio[name=optionsRadios3]:nth(0)').attr('checked',true);
+	//$('input:radio[name=optionsRadios1]')[0].checked = true;
+    });
+
+ $("#set3option2").click(function () {
+ 
+	$('input:radio[name=optionsRadios3]:nth(1)').attr('checked',true);
+	//$('input:radio[name=optionsRadios1]')[1].checked = true;
+    });
+
+ $("#set3option3").click(function () {
+ 
+	$('input:radio[name=optionsRadios3]:nth(2)').attr('checked',true);
+	//$('input:radio[name=optionsRadios1]')[2].checked = true;
+    });
+
+
 // calling info for generating the new Fighter on submit
 $('.submit').click(function(){
 	console.log("Booya");
 	var firstname = $('input[name=firstName]').val();
 	var lastname = $('input[name=lastName]').val();
 	var fightinWords = $('input[name=fightinWords]').val();
+	var ratherfirst = $('input:radio[name=optionsRadios1]:checked').val();
+	var rathersecond = $('input:radio[name=optionsRadios2]:checked').val();
+	var ratherthird = $('input:radio[name=optionsRadios3]:checked').val();
 
-	var wrestlerprofile = new Wrestler (firstname,lastname, fightinWords);
+	var wrestlerprofile = new Wrestler (firstname,lastname, fightinWords, ratherfirst, rathersecond, ratherthird);
 
 	// fighterData2.push(wrestlerprofile);
 
@@ -40,13 +101,17 @@ $('.submit').click(function(){
 });
 
 // Second Testing Code
-function Wrestler (firstname, lastname, fightinWords) {
+function Wrestler (firstname, lastname, fightinWords, ratherfirst, rathersecond, ratherthird) {
 this.firstname = firstname;
 this.lastname = lastname;
 this.fightinWords = fightinWords;
 this.nickname = _.sample(fighterNickNames2);
 this.avatar = _.sample(fighterAvatars2);
+this.ratherfirst = ratherfirst;
+this.rathersecond = rathersecond;
+this.ratherthird = ratherthird;
 };
+
 
 // (Begin)Experimenting to get input info to appear
 	// var coolerStuff	= function(obj){
