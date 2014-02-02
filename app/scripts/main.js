@@ -3,12 +3,7 @@
 var fighterData2 = [ ]
 
 // Fighter Avatars
-var fighterAvatars = [
-	"url(images/Mask1c.jpg)",
-	"url(images/Mask2c.jpg)",
-	"url(images/Mask3c.jpg)",
-	"url(images/Mask4c.jpg)",
-	"url(images/Mask5c.jpg)"]
+var fighterAvatars =	"images/Mask5c.jpg";
 
 
 // Testing Code
@@ -34,31 +29,32 @@ $('.submit').click(function(){
 
 	var wrestlerprofile = new Wrestler (firstname,lastname, fightinWords);
 
-	
-	fighterData2.push(wrestlerprofile);
+	// fighterData2.push(wrestlerprofile);
 
 	event.preventDefault();
 
-	var coolerStuff	= function(obj){
-		$(".right-column").append('<div class = "panel-heading">'+obj.wrestlerfname+ ' ' +obj.wrestlerlname+'</div>')
-		$(".right-column").append('<blockquote><p>'+obj.wrestlerwords+'</p></blockquote>')
-	}
+	var profiletmpl = _.template ($('#profiletmpl').text());
 
-	function coolStuff(){
-	_.each(fighterData2, function(obj){
-			$(".right-column").prepend('<div class = "panel-heading">'+obj.wrestlerfname+'</div>')
-			// console.log(obj.title)
-		})
-}
+	$('.right-column').append(profiletmpl({data:wrestlerprofile}))
 
+// (Begin)Experimenting to get input info to appear
+	// var coolerStuff	= function(obj){
+	// 	$(".right-column").append('<div class = "panel-heading">'+obj.wrestlerfname+ ' ' +obj.wrestlerlname+'</div>')
+	// 	$(".right-column").append('<blockquote><p>'+obj.wrestlerwords+'</p></blockquote>')
+	// }
 
-	// Trying to isolate the newest instance of a wrestlerprofile
+// 	function coolStuff(){
+// 	_.each(fighterData2, function(obj){
+// 			$(".right-column").prepend('<div class = "panel-heading">'+obj.wrestlerfname+'</div>')
+// 			// console.log(obj.title)
+// 		})
+// }
 
+// coolerStuff(wrestlerprofile);
 
-// coolStuff();
-
-coolerStuff(wrestlerprofile);
+// (End)Experimenting to get input info to appear
 
 });
+
 
 
