@@ -1,31 +1,32 @@
 // FighterData2 Array
 
-var fighterData2 = [ ]
+// var fighterData2 = [ ]
 
 // Fighter Avatars
 var fighterAvatars =	"images/Mask5c.jpg";
 
 
-// Testing Code
-function Wrestler (firstname, lastname, fightinWords) {
-if (firstname) {this.wrestlerfname = firstname}
-if (lastname)  {this.wrestlerlname = lastname}
-if (fightinWords) {this.wrestlerwords = fightinWords}
-};
+// First Testing Code
+// function Wrestler (firstname, lastname, fightinWords) {
+// if (firstname) {this.wrestlerfname = firstname}
+// if (lastname)  {this.wrestlerlname = lastname}
+// if (fightinWords) {this.wrestlerwords = fightinWords}
+// };
+
 
 // prototype for new Fighters
-Wrestler.prototype = {
-	wrestlerfname: '' || 'Wrestler',
-	wrestlerlname: '' || 'Dude',
-	wrestlerwords: '' || "I hate making quotes."
-};
+// Wrestler.prototype = {
+// 	wrestlerfname: '' || 'Wrestler',
+// 	wrestlerlname: '' || 'Dude',
+// 	wrestlerwords: '' || "I hate making quotes."
+// };
 
 // calling info for generating the new Fighter on submit
 $('.submit').click(function(){
 	console.log("Booya");
-	var firstname = $('#firstNameInput').val();
-	var lastname = $('#lastNameInput').val();
-	var fightinWords = $('#fightinWords').val();
+	var firstname = $('input[name=firstName]').val();
+	var lastname = $('input[name=lastName]').val();
+	var fightinWords = $('input[name=fightinWords]').val();
 
 	var wrestlerprofile = new Wrestler (firstname,lastname, fightinWords);
 
@@ -35,7 +36,17 @@ $('.submit').click(function(){
 
 	var profiletmpl = _.template ($('#profiletmpl').text());
 
-	$('.right-column').append(profiletmpl({data:wrestlerprofile}))
+	$('.right-column').append(profiletmpl(wrestlerprofile))
+});
+
+// Second Testing Code
+function Wrestler (firstname, lastname, fightinWords) {
+this.firstname = firstname;
+this.lastname = lastname;
+this.fightinWords = fightinWords;
+this.nickname = _.sample(fighterNickNames2);
+this.avatar = _.sample(fighterAvatars2);
+};
 
 // (Begin)Experimenting to get input info to appear
 	// var coolerStuff	= function(obj){
@@ -53,8 +64,6 @@ $('.submit').click(function(){
 // coolerStuff(wrestlerprofile);
 
 // (End)Experimenting to get input info to appear
-
-});
 
 
 

@@ -28,11 +28,11 @@ var fighterData = [
 ]
 
 var fighterAvatars2 = [
-	"url(images/Mask1c.jpg)",
-	"url(images/Mask2c.jpg)",
-	"url(images/Mask3c.jpg)",
-	"url(images/Mask4c.jpg)",
-	"url(images/Mask5c.jpg)"]
+	"'images/Mask1c.jpg'",
+	"'images/Mask2c.jpg'",
+	"'images/Mask3c.jpg'",
+	"'images/Mask4c.jpg'",
+	"'images/Mask5c.jpg'"]
 
 var fighterNickNames2 = [
 	"The Syntax Snake",
